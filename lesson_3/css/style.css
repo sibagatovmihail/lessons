@@ -1,0 +1,40 @@
+@import url(reset.css);
+
+h2 {
+    color: deeppink;
+}
+
+.header__title {
+    color: tomato;
+}
+.header__content-list li > a {
+    color: darkkhaki;
+}
+
+.page.page-abrams {
+    color: royalblue;
+}
+.page.page-abrams .page-abrams__title {
+    color: rgb(228, 81, 81);
+}
+.page-abrams__text {
+    color: rgb(12, 182, 255);
+}
+.page-abrams__text span,
+.page-leopard__container .page-leopard__text p > span {
+    color: firebrick;
+}
+
+.page {
+    color: darkgreen;
+}
+
+.page-leopard > .page-leopard__container * {
+    color: rgb(227, 81, 240);
+}
+.page-challenger__title ~ [class*="page-challenger"] {
+    color: rgb(18, 198, 18);
+}
+.page-challenger__text span {
+    color: black;
+}
