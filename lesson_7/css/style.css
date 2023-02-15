@@ -49,6 +49,7 @@ body {
     margin-bottom: 15px;
 }
 
+
 .main {
 }
 .speaker {
@@ -97,6 +98,7 @@ body {
     padding: 10px 30px;
     color: #ffffff;
     font-weight: 600;
+    display: inline-block;
 }
 
 .unorder {
