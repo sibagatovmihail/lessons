@@ -23,7 +23,7 @@ body {
     font-size: 12px;
     font-weight: 300;
     color: #e5e5e5;
-    background: url(../img/main-background.jpeg) center / cover no-repeat;
+    background: url(../img/main-background.jpeg) center / cover no-repeat fixed;
     min-height: 600px;
     padding-top: 330px;
 }
@@ -68,6 +68,8 @@ body {
     padding: 145px 15px;
 }
 .speaker__body {
+    background-color: rgba(244, 247, 255, 0.244);
+    max-width: 570px;
 }
 .speaker__price {
     color: #3056d3;
@@ -85,7 +87,6 @@ body {
     margin-bottom: 15px;
 }
 .speaker__subtitle {
-    max-width: 570px;
     line-height: 1.5; /* 24/16 */
     color: #637381;
     margin-bottom: 35px;
