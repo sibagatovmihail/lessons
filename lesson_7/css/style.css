@@ -24,8 +24,7 @@ body {
     font-weight: 300;
     color: #e5e5e5;
     background: url(../img/main-background.jpeg) center / cover no-repeat fixed;
-    min-height: 600px;
-    padding-top: 330px;
+    padding: 330px 0 108px 0;
 }
 .header__container {
 }
