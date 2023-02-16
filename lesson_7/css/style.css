@@ -61,7 +61,6 @@ body {
             rgba(214, 222, 248, 0) 100%
         ),
         #f4f7ff;
-    min-height: 560px;
 }
 .speaker__container {
     background: url(../img/speaker.jpeg) 95% no-repeat;
