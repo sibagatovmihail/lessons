@@ -1,0 +1,114 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+
+body{
+    color: #2E2E2E;
+    font-family:"Monocraft";
+    background-color: #fffaf0;
+}
+
+[class*='__container']{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.header {
+    padding: 80px 0;
+
+}
+.header__container{
+
+}
+.header__title {
+    font-size: 35px;
+    line-height: 1.42; /* 50/35 */
+    text-align: center;
+}
+.main {
+
+}
+.section{
+    margin-bottom: 50px;
+}
+.section-title{
+    font-size: 25px;
+    line-height: 1.60; /* 40/25 */
+    text-align: center;
+}
+.section-title:not(:last-child){
+    margin-bottom: 40px;
+}
+.content > *{
+    margin-bottom: 30px;
+}
+.content{
+    font-size: 0;
+}
+.image-block{
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffe7b8;
+    border-radius: 10px;
+    height: 200px;;
+    border: 1px solid #000;
+}
+.image-block:not(:last-child){
+    margin-right: 10px;
+}
+.image-block img{
+    font-size: 14px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.design-images {
+    
+}
+.design-images__container{
+    
+}
+
+.design-images__content {
+    font-size: 0;
+}
+
+
+.design-images__img:nth-child(3),
+.design-images__img:nth-child(8),
+.design-images__img:nth-child(9){
+    background-color: #835700;
+}
+
+
+.content-images {
+
+}
+.content-images__container {
+}
+
+
+.icon-images {
+    
+}
+.icon-images__container {
+}
+.section-title {
+}
+.icon-images__content {
+}
+.icon-images__img:nth-child(3) img, 
+.icon-images__img:nth-child(5) img,
+.icon-images__img:nth-child(6) img,
+.icon-images__img:nth-child(8) img{
+    min-width: 50px;
+}
+
+
+.content > *:last-child{
+    margin-bottom: 0;
+}
