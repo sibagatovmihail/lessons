@@ -79,7 +79,7 @@
     color: #000;
 }
 .practice__block_8:hover {
-    transform: scale(50%);
+    transform: scale(0.5);
 }
 .practice__block_9 {
     background-color: rgb(217, 48, 93);
@@ -92,7 +92,7 @@
     color: #000;
 }
 .practice__block_10:hover {
-    transform: scale(-50%, 1);
+    transform: scale(-0.5, 1);
 }
 .practice__block_11 {
     background-color: rgb(24, 99, 40);
