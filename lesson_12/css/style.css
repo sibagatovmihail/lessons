@@ -1,0 +1,371 @@
+@import url(reset.css);
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+.practice {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.practice__container {
+    perspective: 400px;
+}
+.practice__block {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: tomato;
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 1.33; /* 40/30 */
+    color: #fff;
+    text-transform: uppercase;
+}
+.practice__block:not(:last-child) {
+    margin-bottom: 25px;
+}
+.practice__block_1:hover {
+    transform: translate(50px, 50%);
+}
+.practice__block_2 {
+    background-color: rgb(219, 139, 125);
+    color: #000;
+}
+.practice__block_2:hover {
+    transform: translateX(100px);
+}
+.practice__block_3 {
+    background-color: rgb(87, 148, 49);
+}
+.practice__block_3:hover {
+    transform: rotate(90deg);
+    width: 400px;
+}
+.practice__block_4 {
+    background-color: rgb(49, 148, 110);
+}
+.practice__block_4:hover {
+    transform: rotateX(20deg);
+}
+.practice__block_5 {
+    background-color: rgb(88, 223, 223);
+    color: #000;
+}
+.practice__block_5:hover {
+    transform: rotateY(-45deg);
+}
+.practice__block_6 {
+    background-color: rgb(48, 93, 217);
+}
+.practice__block_6:hover {
+    transform: translate3d(20px, 50px, 50px);
+}
+.practice__block_7 {
+    background-color: rgb(155, 48, 217);
+}
+.practice__block_7:hover {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.practice__block_8 {
+    background-color: rgb(175, 217, 48);
+    color: #000;
+}
+.practice__block_8:hover {
+    transform: scale(50%);
+}
+.practice__block_9 {
+    background-color: rgb(217, 48, 93);
+}
+.practice__block_9:hover {
+    transform: scaleY(1.5);
+}
+.practice__block_10 {
+    background-color: rgb(0, 170, 255);
+    color: #000;
+}
+.practice__block_10:hover {
+    transform: scale(-50%, 1);
+}
+.practice__block_11 {
+    background-color: rgb(24, 99, 40);
+}
+.practice__block_11:hover {
+    transform: skewY(40deg) scale(1.4);
+}
+.practice__block_12 {
+    background-color: rgba(166, 19, 234, 0);
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0;
+    position: relative;
+}
+.practice__block_12::before,
+.practice__block_12::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #000;
+}
+.practice__block_12::before {
+    transform: skewY(45deg);
+    top: 8px;
+    left: 100%;
+    width: 20px;
+    height: calc(100% + 2px);
+}
+.practice__block_12::after {
+    transform: skew(45deg);
+    top: 100%;
+    left: 8px;
+    width: calc(100% + 2px);
+    height: 20px;
+}
+.practice__block_12:hover {
+    background-color: rgba(166, 19, 234, 0.5);
+}
+.practice__block_13 {
+    background-color: rgb(255, 158, 2);
+    color: #000;
+}
+.practice__block_13:hover {
+    transform: scale(1.2);
+    transform-origin: left bottom;
+}
+.practice__block_14 {
+    background-color: rgb(116, 138, 18);
+}
+.practice__block_14:hover {
+    transform: rotate(-14deg) translate(-20px, 10px);
+    transform-origin: right;
+}
+.practice__block_15 {
+    background-color: rgb(62, 71, 120);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: left;
+    transform: rotate(90deg);
+}
+.practice__block_16 {
+    background-color: rgb(168, 5, 5);
+}
+.practice__block_16:hover {
+    transform: rotateY(90deg) rotateX(90deg);
+}
+
+
+
+.my-car{
+    display: block;
+    padding: 30px 50px;
+    background-color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.42; /* 40/28 */
+    transition: all .15s;
+}
+.my-car:hover{
+    background-color: rgb(187, 218, 246);
+}
+
+.car {
+    background: rgb(191, 244, 255);
+    background: linear-gradient(
+        180deg,
+        rgba(191, 244, 255, 1) 12%,
+        rgba(191, 255, 247, 1) 35%,
+        rgba(248, 205, 255, 1) 35%,
+        rgba(224, 145, 178, 1) 100%
+    );
+    height: 800px;
+}
+.car__polygon {
+    max-width: 1000px;
+
+    margin: 0 auto;
+    transform: translate(0, 100%);
+}
+.car__body {
+    height: 300px;
+    font-size: 0;
+    perspective: 300px;
+}
+.car__column {
+    display: inline-block;
+    height: 100%;
+    perspective: 400px;
+}
+.car__column_left {
+    width: 450px;
+    position: relative;
+}
+.car__column_left .car__rectangle {
+    height: 100px;
+    background: linear-gradient(350deg, rgb(48, 104, 233) 60%, rgb(6, 67, 212) 100%);
+    border-bottom-left-radius: 50px;
+}
+.car__column_left::before {
+    content: "";
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: rgb(191, 244, 255);
+    background: linear-gradient(
+        170deg,
+        rgba(191, 244, 255, 0) 0%,
+        rgba(191, 255, 247, 0) 60%,
+        rgb(6, 67, 212) 60%,
+        rgb(48, 104, 233) 100%
+    );
+}
+.car__wheel {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 53%,
+        rgba(99, 99, 99, 1) 54%,
+        rgba(99, 99, 99, 1) 94%
+    );
+    border-radius: 50%;
+    transform: translate(50%, -70%);
+    border: 10px dashed #000;
+}
+.car__wheel:hover {
+    transform: translate(50%, -70%) rotate(50deg) rotateY(-30deg)  scale(1.1);
+    transform-origin: center;
+}
+.car__wheel::after,
+.car__wheel::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: calc(50%);
+    left: 0%;
+    width: 100%;
+    height: 10px;
+    transform: translate(0, -50%);
+    background-color: rgb(96, 96, 96);
+    transform: rotate(20deg);
+}
+.car__wheel::after {
+    transform: rotate(-20deg);
+}
+.car__front-light {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(
+        170deg,
+        rgba(191, 244, 255, 0) 0%,
+        rgba(191, 255, 247, 0) 30%,
+        rgb(235, 220, 7) 30%,
+        rgb(243, 228, 18) 100%
+    );
+    border-radius: 0 0 10px 0;
+}
+.car__front-light:hover{
+    background: linear-gradient(
+        170deg,
+        rgba(191, 244, 255, 0) 0%,
+        rgba(191, 255, 247, 0) 30%,
+        rgb(235, 7, 7) 30%,
+        rgb(235, 7, 7) 100%
+    );
+}
+.car__column_center {
+    background: linear-gradient(345deg, rgb(48, 104, 233) 30%, rgb(6, 67, 212) 100%);
+    height: 100%;
+    width: 250px;
+    border-radius: 60% 10% 0 0 / 30% 10% 0 0;
+}
+.car__window-wrapper {
+    width: 90%;
+    height: 100px;
+    background: url(../img/car-face.jpeg) 50% -60px / cover no-repeat;
+    border-radius: 80% 10% 0 10px / 80% 10% 0 10px;
+    transform: translate(10px, 10px);
+    overflow: clip;
+}
+.car__window {
+    width: 100%;
+    height: 100%;
+    border-radius: 80% 10% 0 10px / 80% 10% 0 10px;
+    background: rgb(99, 99, 99);
+    background: linear-gradient(146deg, rgba(99, 99, 99, 1) 10%, rgba(0, 0, 0, 1) 52%, rgba(99, 99, 99, 1) 93%);
+}
+.car__window:hover {
+    transform: translate(5px, 60px);
+}
+.car__column_right {
+    width: 300px;
+}
+.car__column_right::before {
+    content: "";
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: rgb(191, 244, 255);
+    background: linear-gradient(
+        190deg,
+        rgba(191, 244, 255, 0) 0%,
+        rgba(191, 255, 247, 0) 30%,
+        rgb(6, 67, 212) 30%,
+        rgb(48, 104, 233) 100%
+    );
+}
+.car__column_right .car__rectangle {
+    background: linear-gradient(132deg, rgb(48, 104, 233) 30%, rgb(6, 67, 212) 100%);
+    height: 100px;
+}
+.car__back-light {
+    position: absolute;
+    top: 43px;
+    right: 0;
+    width: 50px;
+    height: 100px;
+    background: linear-gradient(
+        190deg,
+        rgba(191, 244, 255, 0) 0%,
+        rgba(191, 255, 247, 0) 30%,
+        rgb(212, 6, 6) 30%,
+        rgb(212, 6, 6) 100%
+    );
+    border-radius: 0 0 0 30px;
+}
+.car__back-light::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 25px;
+    height: 30px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 0 0 0 10px;
+}
+.car__back-light:hover:hover::after{
+    background-color: rgb(212, 6, 6);
+}
+.car__back-light:hover{
+    background: linear-gradient(
+        190deg,
+        rgba(191, 244, 255, 0) 0%,
+        rgba(191, 255, 247, 0) 30%,
+        rgb(255, 153, 0) 30%,
+        rgb(255, 153, 0) 100%
+    );
+}
