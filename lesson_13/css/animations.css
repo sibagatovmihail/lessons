@@ -1,0 +1,214 @@
+@keyframes wheel-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes wheel-transform_1 {
+    0% {
+        top: -28%;
+    }
+    50% {
+        top: -22%;
+    }
+    100% {
+        top: -28%;
+    }
+}
+@keyframes wheel-transform_2 {
+    0% {
+        top: -22%;
+    }
+    50% {
+        top: -28%;
+    }
+    100% {
+        top: -22%;
+    }
+}
+@keyframes car-shaking {
+    0% {
+        top: -10px;
+        transform: scale(0.7) rotate(2deg);
+    }
+    50% {
+        top: 10px;
+        transform: scale(0.7) rotate(-1deg);
+    }
+    100% {
+        top: -10px;
+        transform: scale(0.7) rotate(2deg);
+    }
+}
+@keyframes car-rotates {
+    0% {
+        transform: scale(0.7);
+        left: 0;
+    }
+    10% {
+        transform: scale(0.9);
+        left: -150px;
+    }
+    20% {
+        transform: scale(0.7);
+        left: -300px;
+    }
+    30% {
+        left: 200px;
+    }
+    40% {
+        left: 0;
+    }
+    50% {
+        transform: scale(0.4);
+        left: -130px;
+    }
+    65% {
+        transform: scale(0.7);
+        left: -400px;
+    }
+    80% {
+        left: -100px;
+    }
+    90% {
+        left: 0;
+    }
+    100% {
+        transform: scale(0.7);
+        left: 0;
+    }
+}
+
+@keyframes sun-moving {
+    0% {
+        left: 0;
+        background-color: rgb(255, 225, 52);
+    }
+    12.5%,
+    62.5% {
+        left: calc(25% - 37.5px);
+        top: calc(25% - 37.5px);
+    }
+    25%,
+    75% {
+        left: calc(50% - 37.5px);
+        top: 50px;
+    }
+    37.5%,
+    87.5% {
+        left: calc(75% - 37.5px);
+        top: calc(25% - 37.5px);
+    }
+    50%,
+    100% {
+        left: 100%;
+        top: 60%;
+        background-color: rgb(255, 225, 52);
+    }
+    51% {
+        left: 0;
+        top: calc(50% - 37.5px);
+        background-color: #dadae1;
+    }
+    99% {
+        background-color: #dadae1;
+    }
+}
+
+@keyframes clouds-back {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes clouds-front-02{
+    0%{
+        transform: translate(-150%, 0);
+    }
+    100%{
+        transform: translate(50%, 0);
+    }
+}
+@keyframes clouds-front-01{
+    0%{
+        transform: translate(-150%, 0);
+    }
+    100%{
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes sky-color {
+    0%,
+    50% {
+        background-color: rgb(104, 225, 255);
+    }
+    51%,
+    99% {
+        background-color: rgb(26, 5, 183);
+    }
+    100% {
+        background-color: rgb(104, 225, 255);
+    }
+}
+@keyframes road-color {
+    0%,
+    50% {
+        background-color: rgb(164, 161, 161);
+    }
+    51%,
+    99% {
+        background-color: rgb(100, 99, 99);
+    }
+    100% {
+        background-color: rgb(164, 161, 161);
+    }
+}
+@keyframes front-light-night {
+    0%,
+    50% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    51%,
+    99% {
+        opacity: 0.8;
+        visibility: visible;
+    }
+    99.5% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes back-tree-line {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes front-tree-line {
+    0% {
+        transform: translate(-250px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes road-lines {
+    0% {
+        transform: translate(-330px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
