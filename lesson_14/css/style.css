@@ -199,15 +199,16 @@ body{
 .cards-page {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    row-gap: 45px;
+    margin: 0 -15px;
 }
 .cards-page__card {
 }
 .card {
     display: flex;
     flex-direction: column;
-    flex: 0 1 391px;
+    flex: 0 1 33.333%;
+    padding: 0 15px;
     row-gap: 30px;
 }
 .card__image {
@@ -216,7 +217,7 @@ body{
     border-radius: 3px;
 }
 .card__image img{
-    max-width: 100%;
+    width: 100%;
     transition: transform .25s;
 }
 .card__image img:hover{
@@ -234,6 +235,7 @@ body{
     padding: 3px 12px;
     border-radius: 3px;
     transition: all .3s;
+    display: inline-block;
 }
 .card__category:hover{
     background-color: #21252993;
