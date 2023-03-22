@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16 (practice)</title>
+</head>
+
+<body class="body-first">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="homework.html" class="header__link">Домашне завдання</a>
+            </div>
+            
+        </header>
+        <main class="page">
+            <div class="waves"></div>
+            <div class="page__container">
+                <h1 class="page__title">
+                    Практика з форм
+                </h1>
+                <form action="https://jsonplaceholder.typicode.com/posts" class="page__form form-page" method="post">
+                    <div class="form-page__line">
+                        <label for="username" class="form-page__label">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Your username"
+                            class="form-page__input" autocomplete="off" autofocus>
+                    </div>
+                    <div class="form-page__line">
+                        <label for="address" class="form-page__label">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Address" required
+                            class="form-page__input" autocomplete="off">
+                    </div>
+                    <div class="form-page__line">
+                        <label for="email" class="form-page__label">E-mail</label>
+                        <input type="emali" name="email" id="email" placeholder="Email"
+                            class="form-page__input" autocomplete="off">
+                    </div>
+                    <div class="form-page__line">
+                        <label for="phone" class="form-page__label">Mobile phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone"
+                            class="form-page__input" autocomplete="off" required>
+                    </div>
+                    <div class="form-page__line form-page__line_color">
+                        <label for="color" class="form-page__label">Favourite color</label>
+                        <input type="color" name="color" id="color" class="form-page__input">
+                    </div>
+                    <div class="form-page__line form-page__line_live">
+                        <label for="live" class="form-page__label">Live quality Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, cumque.</label>
+                        <input type="range" name="live-quality" id="live" class="form-page__input">
+                    </div>
+                    <div class="form-page__line form-page__line_age" id="age-line">
+                        <label for="age-line" class="form-page__title">Your age</label>
+                        <div class="form-page__radio radio">
+                            <input type="radio" name="age" id="age_01" class="radio__input" value="0 - 18">
+                            <label for="age_01" class="radio__label">0 - 18</label>
+                        </div>
+                        <div class="form-page__radio radio">
+                            <input type="radio" name="age" id="age_02" class="radio__input" value="18-27">
+                            <label for="age_02" class="radio__label">18 - 27</label>
+                        </div>
+                        <div class="form-page__radio radio">
+                            <input type="radio" name="age" id="age_03" class="radio__input" value="27-62">
+                            <label for="age_03" class="radio__label">27 - 62</label>
+                        </div>
+                        <div class="form-page__radio radio">
+                            <input type="radio" name="age" id="age_04" class="radio__input" value=">62">
+                            <label for="age_04" class="radio__label">>62</label>
+                        </div>
+                    </div>
+                    <div class="form-page__line form-page__line_skills" id="skills-line">
+                        <label for="skills-line" class="form-page__title">Your skills</label>
+                        <div class="form-page__checkbox checkbox">
+                            <input type="checkbox" class="checkbox__input" name="skills" id="skills_01" value="Reading">
+                            <label for="skills_01" class="checkbox__label">Reading</label>
+                        </div>
+                        <div class="form-page__checkbox checkbox">
+                            <input type="checkbox" class="checkbox__input" name="skills" id="skills_02" value="Skiing">
+                            <label for="skills_02" class="checkbox__label">Skiing</label>
+                        </div>
+                        <div class="form-page__checkbox checkbox">
+                            <input type="checkbox" class="checkbox__input" name="skills" id="skills_03" value="Riding">
+                            <label for="skills_03" class="checkbox__label">Riding</label>
+                        </div>
+                        <div class="form-page__checkbox checkbox">
+                            <input type="checkbox" class="checkbox__input" name="skills" id="skills_04" value="Diving">
+                            <label for="skills_04" class="checkbox__label">Diving</label>
+                        </div>
+                        <div class="form-page__checkbox checkbox">
+                            <input type="checkbox" class="checkbox__input" name="skills" id="skills_05"
+                                value="Creating">
+                            <label for="skills_05" class="checkbox__label">Creating Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque officiis esse expedita quidem odit vero.</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-page__button">Send</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+
+</html>
