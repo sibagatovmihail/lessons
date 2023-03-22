@@ -489,6 +489,9 @@ select {
 .form-line__label {
     flex: 0 1 140px;
     width: 140px;
+    font-weight: 400;
+    color: #3F3F3F;
+    line-height: 1.25; /* 20/16 */
 }
 .form-line__label span {
     color: #eb5757;
@@ -612,6 +615,7 @@ select {
 }
 .form-line__field_select select {
     color: #3f3f3f !important;
+    font-weight: 400;
 }
 
 .form-checkout__option {
