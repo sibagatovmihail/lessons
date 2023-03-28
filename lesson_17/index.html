@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home work</title>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <header class='header'>
+
+        </header>
+        <main class='page'>
+            <div class="page__checkout checkout">
+                <div class="checkout__container">
+                    <h1 class="checkout__title">
+                        Checkout
+                    </h1>
+                    <div class="checkout__text">
+                        <p>
+                            There are 3 products in your cart
+                        </p>
+                    </div>
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="checkout__form form-checkout"
+                        method="post">
+                        <h2 class="form-checkout__title">
+                            Billing Details
+                        </h2>
+                        <div class="form-checkout__inputs">
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off"
+                                    name="f-name" placeholder="First name*">
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off"
+                                    name="l-name" placeholder="Last name*">
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off"
+                                    name="address" placeholder="Address*">
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" autocomplete="off" name="address-2"
+                                    placeholder="Address line 2">
+                            </div>
+                            <div class="form-checkout__field form-checkout__field_select">
+                                <select name="checkout-country" id="checkout-country" class="form-checkout__select"
+                                    required>
+                                    <option value="Country*" selected disabled class="form-checkout__option">Country*
+                                    </option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="France">France</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="United States">United States</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                </select>
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off" name="City"
+                                    placeholder="City/Town*">
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off"
+                                    name="Postcode / ZIP" placeholder="Postcode / ZIP*">
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off" name="tel"
+                                    placeholder="Phone*">
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off"
+                                    name="Postcode / ZIP" placeholder="Postcode / ZIP*">
+                            </div>
+                            <div class="form-checkout__field">
+                                <input type="text" class="form-checkout__input" required autocomplete="off" name="tel"
+                                    placeholder="Phone*">
+                            </div>
+                            <textarea name="add-info" id="add-info" cols="30" rows="10" class="form-checkout__textarea"
+                                placeholder="Additional information"></textarea>
+                        </div>
+                        <div class="form-checkout__services services-checkout">
+                            <div class="services-checkout__line">
+                                <input type="checkbox" class="services-checkout__input" name="services"
+                                    id="create-account" value="Create account">
+                                <label for="create-account" class="services-checkout__label">Create Account</label>
+                            </div>
+                            <div class="services-checkout__line">
+                                <input type="checkbox" class="services-checkout__input" name="services"
+                                    id="another-address" value="another address">
+                                <label for="another-address" class="services-checkout__label">Ship to a different
+                                    address?</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-checkout__button">Place an Order</button>
+                    </form>
+                    <form action="#" class="checkout__coupon coupon-checkout" method="post">
+                        <h2 class="coupon-checkout__title">
+                            Apply Coupon to get discount!
+                        </h2>
+                        <div class="coupon-checkout__field">
+                            <input type="text" class="coupon-checkout__input" placeholder="Coupon code">
+                            <button type="submit" class="coupon-checkout__button">Apply Code</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="page__shipping shipping">
+                <div class="shipping__container">
+                    <form action="https://jsonplaceholder.typicode.com/posts"
+                        class="shipping__address-form form-address" method="post">
+                        <h2 class="form-address__title">
+                            Shipping Address
+                        </h2>
+                        <div class="form-address__login login-form">
+                            <div class="login-form__fields">
+                                <div class="login-form__line form-line">
+                                    <label for="e-mail" class="form-line__label">Email Address <span>*</span></label>
+                                    <div class="form-line__field">
+                                        <input type="email" class="form-line__input" name="email" id="e-mail"
+                                            placeholder="roni_cost@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="login-form__line form-line">
+                                    <label for="userpass" class="form-line__label">Password <span>*</span></label>
+                                    <div class="form-line__field">
+                                        <input type="password" class="form-line__input" name="password" id="userpass"
+                                            placeholder="*************" required>
+                                    </div>
+                                </div>
+                                <div class="login-form__line form-line">
+                                    <label for="zip-code" class="form-line__label">Zip/Postal Code</label>
+                                    <div class="form-line__field">
+                                        <input type="text" class="form-line__input" name="ZIP / Postal code"
+                                            id="zip-code">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-form__warning">
+                                You already have an account with us. Sign in or continue as guest.
+                            </div>
+                            <div class="login-form__action">
+                                <button class="login-form__button" type="submit">
+                                    login
+                                </button>
+                                <a href="#" class="login-form__password-forget">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="shipping__sign-up sign-up-form"
+                        method="post">
+                        <div class="sign-up-form__login login-form">
+                            <div class="login-form__fields">
+                                <div class="login-form__line form-line">
+                                    <label for="fname" class="form-line__label">First Name <span>*</span></label>
+                                    <div class="form-line__field">
+                                        <input type="text" class="form-line__input" name="f-name" id="fname" required>
+                                    </div>
+                                </div>
+                                <div class="login-form__line form-line">
+                                    <label for="lname" class="form-line__label">Last Name <span>*</span></label>
+                                    <div class="form-line__field">
+                                        <input type="text" class="form-line__input" name="l-name" id="lname" required>
+                                    </div>
+                                </div>
+                                <div class="login-form__line form-line">
+                                    <label for="company" class="form-line__label">Company</label>
+                                    <div class="form-line__field">
+                                        <input type="text" class="form-line__input" name="company" id="company"">
+                                    </div>
+                                </div>
+                                <div class=" login-form__line form-line">
+                                        <label for="fname" class="form-line__label">First Name <span>*</span></label>
+                                        <div class="form-line__multi-fields">
+                                            <div class="form-line__field">
+                                                <input type="text" class="form-line__input" name="f-name" id="fname"
+                                                    required>
+                                            </div>
+                                            <div class="form-line__field">
+                                                <input type="text" class="form-line__input" name="f-name" id="fname"
+                                                    required>
+                                            </div>
+                                            <div class="form-line__field">
+                                                <input type="text" class="form-line__input" name="f-name" id="fname"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="login-form__line form-line">
+                                        <label for="country" class="form-line__label">Country <span>*</span></label>
+                                        <div class="form-line__field">
+                                            <input type="text" class="form-line__input" name="country" id="country"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="login-form__line form-line">
+                                        <label for="state" class="form-line__label">State/Province
+                                            <span>*</span></label>
+                                        <div class="form-line__field form-line__field_select">
+                                            <select name="state" id="state" required
+                                                class="form-line__input form-line__input_select">
+                                                <option value="Country*" selected disabled
+                                                    class="form-checkout__option">Please select a region, state or
+                                                    province
+                                                </option>
+                                                <option value="Ukraine">Ukraine</option>
+                                                <option value="Poland">Poland</option>
+                                                <option value="Germany">Germany</option>
+                                                <option value="France">France</option>
+                                                <option value="Italy">Italy</option>
+                                                <option value="United States">United States</option>
+                                                <option value="United Kingdom">United Kingdom</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sign-up-form__ship-method method-ship">
+                                <h2 class="method-ship__title">
+                                    Shipping Methods
+                                </h2>
+                                <div class="method-ship__payment">
+                                    <div class="method-ship__line">
+                                        <div class="method-ship__price">
+                                            <input type="radio" class="method-ship__input" id="price-5" name="rate">
+                                            <label for="price-5" class="method-ship__label">$5.00</label>
+                                        </div>
+                                        <div class="method-ship__advantages">
+                                            <div class="method-ship__advantage">
+                                                Fixed
+                                            </div>
+                                            <div class="method-ship__advantage">
+                                                Flat Rate
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="method-ship__line">
+                                        <div class="method-ship__price">
+                                            <input type="radio" class="method-ship__input" id="price-10" name="rate">
+                                            <label for="price-10" class="method-ship__label">$10.00</label>
+                                        </div>
+                                        <div class="method-ship__advantages">
+                                            <div class="method-ship__advantage">
+                                                Table Rate
+                                            </div>
+                                            <div class="method-ship__advantage">
+                                                Best Way
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sign-up-form__actions">
+                                <button class="sign-up-form__button">next</button>
+                                <a href="#" class="sign-up-form__link">Back</a>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="page-services services">
+                <div class="services__container">
+                    <h2 class="services__title">
+                        ACHIEVEMENT
+                    </h2>
+                    <div class="services__offers">
+                        <div class="services__offer offer-services">
+                            <div class="offer-services__column">
+                                <div class="offer-services__image">
+                                    <img src="img/services/01.jpeg" alt="design">
+                                </div>
+                            </div>
+                            <div class="offer-services__column">
+                                <div class="offer-services__body">
+                                    <h3 class="offer-services__title">
+                                        Interior design
+                                    </h3>
+                                    <div class="offer-services__subtitle">
+                                        <p>
+                                            Customize your interior design into a dream place with the best designers
+                                            and
+                                            quality furniture. We try our best to fulfill your expectations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__offer offer-services">
+                            <div class="offer-services__column">
+                                <div class="offer-services__image">
+                                    <img src="img/services/02.jpeg" alt="consultant">
+                                </div>
+                            </div>
+                            <div class="offer-services__column">
+                                <div class="offer-services__body">
+                                    <h3 class="offer-services__title">
+                                        Consultant
+                                    </h3>
+                                    <div class="offer-services__subtitle">
+                                        <p>
+                                            Customize your interior design into a dream place with the best designers
+                                            and
+                                            quality furniture. We try our best to fulfill your expectations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__offer offer-services">
+                            <div class="offer-services__column">
+                                <div class="offer-services__image">
+                                    <img src="img/rooms/05.jpeg" alt="construction consultant">
+                                </div>
+                            </div>
+                            <div class="offer-services__column">
+                                <div class="offer-services__body">
+                                    <h3 class="offer-services__title">
+                                        construction consultant
+                                    </h3>
+                                    <div class="offer-services__subtitle">
+                                        <p>
+                                            Customize your interior design into a dream place with the best designers
+                                            and
+                                            quality furniture. We try our best to fulfill your expectations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__room room">
+                <div class="room__container">
+                    <div class="room__header header-room">
+                        <h2 class="header-room__title">
+                            Minimalist Room
+                        </h2>
+                        <div class="header-room__text">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </div>
+                        <div class="header-room__image">
+                            <img src="img/rooms/01.jpeg" alt="main room">
+                        </div>
+                    </div>
+                    <div class="room__details details-room">
+                        <div class="details-room__column">
+                            <h4 class="details-room__title">
+                                Project Overview
+                            </h4>
+                            <div class="details-room__body"> 
+                                <div class="details-room__text">
+                                    <p>
+                                        Online learning with us does not interfere with your daily life. because learning
+                                        can be done anytime and anywhere. Online learning with us does not interfere with
+                                        your daily life. because learning can be done anytime and anywhere. Online learning
+                                        with us does not interfere with your daily life. because learning can be done
+                                        anytime and anywhere.
+                                    </p>
+                                </div>
+                                <div class="details-room__info">
+                                    <a href="#" class="details-room__date">
+                                        July 22 - 2022
+                                    </a>
+                                    <a href="#" class="details-room__categorie">
+                                        Interior Design - Furnitur
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="details-room__column">
+                            <h4 class="details-room__title">
+                                Project Overview
+                            </h4>
+                            <div class="details-room__text">
+                                <p>
+                                    Online learning with us does not interfere with your daily life. because learning
+                                    can be done anytime and anywhere. Online learning with us does not interfere with
+                                    your daily life. because learning can be done anytime and anywhere.
+                                </p>
+                                <p>
+                                    Online learning with us does not interfere with your daily life. because learning
+                                    can be done anytime and anywhere. Online learning with us does not interfere with
+                                    your daily life. because learning can be done anytime and anywhere.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room__images images-room">
+                        <div class="images-room__item">
+                            <div class="images-room__image">
+                                <img src="img/rooms/02.jpeg" alt="chair">
+                                <div class="images-room__offer">
+                                    <a href="#" class="images-room__link">Look inside</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-room__item">
+                            <div class="images-room__image">
+                                <img src="img/rooms/03.jpeg" alt="table">
+                                <div class="images-room__offer">
+                                    <a href="#" class="images-room__link">Look inside</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-room__item">
+                            <div class="images-room__image">
+                                <img src="img/rooms/04.jpeg" alt="chair">
+                                <div class="images-room__offer">
+                                    <a href="#" class="images-room__link">Look inside</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-room__item">
+                            <div class="images-room__image">
+                                <img src="img/rooms/05.jpeg" alt="table">
+                                <div class="images-room__offer">
+                                    <a href="#" class="images-room__link">Look inside</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-room__item">
+                            <div class="images-room__image">
+                                <img src="img/rooms/06.jpeg" alt="chair">
+                                <div class="images-room__offer">
+                                    <a href="#" class="images-room__link">Look inside</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class='footer'>
+
+        </footer>
+    </div>
+</body>
+
+</html>
