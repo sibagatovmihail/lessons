@@ -1,0 +1,15 @@
+.logo span {
+    color: #DDBEA9;
+}
+.menu {
+    display: flex;
+    column-gap: 25px;
+    row-gap: 5px;
+}
+.title{
+    color: #212529;
+    font-size: 25px;
+    line-height: 1.6;
+    /* 40/25 */
+    font-weight: 700;
+}
